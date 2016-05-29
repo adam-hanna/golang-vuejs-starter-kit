@@ -1,0 +1,6 @@
+{
+	"ImportPath": "github.com/adam-hanna/golang-vuejs-starter-kit/src/goLang",
+	"GoVersion": "go1.6",
+	"GodepVersion": "v62",
+	"Deps": []
+}
