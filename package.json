@@ -5,8 +5,9 @@
   "author": "Adam Hanna <ahanna@alumni.mines.edu>",
   "private": true,
   "scripts": {
-    "dev": "go run src/goLang/main.go ; node build/dev-server.js",
-    "build": "go run src/goLang/main.go ; node build/build.js",
+    "dev": "node build/dev-server.js & go run src/goLang/main.go",
+    "build": "node build/build.js & npm run buildGoLang",
+    "buildGoLang": "cd src/goLang && godep save && make",
     "test": ""
   },
   "dependencies": {
